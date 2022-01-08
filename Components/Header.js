@@ -1,13 +1,9 @@
-import { ArrowDownIcon, ArrowNarrowDownIcon, ArrowNarrowRightIcon, ArrowSmDownIcon, PlusIcon, ShoppingBagIcon, ShoppingCartIcon, XIcon} from "@heroicons/react/solid"
+import { ArrowDownIcon, ArrowNarrowDownIcon, ArrowNarrowRightIcon, ArrowSmDownIcon, PlusIcon, ShoppingBagIcon, ShoppingCartIcon, XIcon, MenuIcon} from "@heroicons/react/solid"
 import Image from "next/image"
-import LuggageImage from '../Images/luggage.png'
 import { useState } from "react";
 import { datalist } from "./data";
-
-
-import safariImagee from '../Images/safari1.jpg'
-import Treehouse from '../Images/Treehouse1.jpg'
 import Link from "next/link";
+import menuItems from "./MenuItems";
 
 
 
@@ -24,6 +20,12 @@ function Header()
     const closeModalHandle = () => {
       setShowModal(false);
     }
+
+    const [active, setActive] = useState(false);
+
+  const handleClick = () => {
+    setActive(!active);
+  };
     // const [isHovering, setIsHovering] = useState(false);
     // const handleMouseOver = () => {
     //   setIsHovering(true);
@@ -47,44 +49,37 @@ function Header()
       
     return (
         <div>
-            <header>
-            <div className="h-20 p-5">
-                    <ul className="flex justify-end gap-3 text-sm pb-2 font-PlayFair">
-                        <li>All Rates</li>
-                        <li>Travel Partner</li>
-                        <li>Contact us</li>
-                        <li>Covid-19</li>
-                    </ul>
-                    <hr className=" border-gray-300 "/>
-                </div>
-                <div className="flex pl-5 pb-2 justify-evenly">
-                  <Link href={"/"}><h1 className=" font-PlayFair text-4xl">TRAVELODGE</h1></Link>
-                 
-                    <ul className="flex gap-5 pl-20 items-center font-Raleway text-xs  font-bold">
-                        <div className="flex gap-3 hover:bg-yellow-100 p-4">
-                        <li className=" cursor-pointer">LODGE&HOTELS</li>
-                        <ArrowSmDownIcon className="w-5"/>
-                        </div>
-                        <div className="flex gap-3" onClick={openModalHandle}>
-                        <li className=" cursor-pointer" >EXPERIENCES</li>
-                       
-                        <ArrowSmDownIcon className="w-5"/>
-                        </div>
-                       <Link href={"/StoryPage"}><li>OUR STORY</li></Link>
-                       <Link href={"/Package"}><li>OUR PACKAGES</li></Link>
-                        <li>BLOG</li>
-                    </ul>
-                   
-                    <div className="flex gap-3 font-PlayFair">
-                    <button className="p-4 bg-black text-white-white">Book Now</button>
-                    </div>
-                   
-                </div>
-                {showModal ? <div className="flex flex-col">
-                    <Modal closeModalHandle={closeModalHandle}/>
-                </div> : null}
-            </header>
-        </div>
+          <header className=" navbar  flex justify-evenly text-black pt-10 pb-10 bg-white   z-20 w-full">
+      <div className=" items-left justify-items-center w-32 invisible lg:visible">
+       <Link href="/">
+        <h1 className="text-4xl font-Raleway font-bold">Travelodge</h1>
+       </Link>
+      </div>
+      <div className="menu-icon" onClick={handleClick}>
+       {active ? <MenuIcon className="w-8 h-8"/> : <PlusIcon className="w-8 h-8  rotate-45"/>}
+      </div>
+      <ul className={active ? "nav-menu flex active items-center bg-white" : "nav-menu space-x-6  font-Krona font-light text-sm  "}>
+        <li>Hotel & Lodges</li>
+        <li onClick={openModalHandle}>Experiences</li>
+        <Link href={"/StoryPage"}>
+        <li>Our Story</li>
+        </Link>
+        <Link href={"/Package"}>
+        <li>Our Packages</li>
+        </Link>
+       
+        <li>Blogs</li>
+      </ul>
+      <div className=" invisible lg:visible bg-black p-4 font-Krona text-sm text-white-white">
+        Enquire
+      </div>
+     
+    </header>
+    {showModal ? <div className="flex flex-col">
+    <Modal closeModalHandle={closeModalHandle}/>
+     </div> : null}
+ 
+       </div>
     )
 }
 
