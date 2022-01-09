@@ -88,15 +88,15 @@ export default Header
 
 export const Modal = ({closeModalHandle, datalistItems}) => {
     return(
-       <div className=" bg-gray-800 h-800 transform duration-1000 ease-in">
-           <div className=" max-w-7xl mx-auto flex justify-between ">    
-                <h1 className="text-3xl font-bold pt-10 text-white-white font-PlayFair">More Experience</h1>
+       <div className=" bg-gray-800 transform duration-1000 ease-in">
+           <div className=" justify-between flex p-2 md:max-w-7xl md:mx-auto ">    
+                <h1 className="text-2xl font-bold pt-10 text-white-white font-PlayFair">More Experience</h1>
                 <XIcon onClick={closeModalHandle} className="w-7 text-white-white pt-10" />
             </div>
-           <HeaderCarousel/>
-           <div className=" max-w-7xl mx-auto flex items-center">
-             <h2 className=" font-PlayFair text-3xl pt-5 text-white-white">Too many options and too little time?</h2>
-             <button className="p-4 bg-white-white text-black font-Raleway mt-5 ml-2">Help Me Decide</button>
+            <HeaderCarousel/> 
+            <div className="flex flex-col md:flex-row md:items-center md:max-w-7xl md:mx-auto">
+             <h2 className=" font-PlayFair text-2xl p-2 pt-5 text-white-white">Too many options and too little time?</h2>
+             <button className="p-4 bg-white-white text-black font-Raleway mt-5 ml-4 mr-4 mb-4 md:w-2/12">Help Me Decide</button>
            </div>
          
           
@@ -108,11 +108,11 @@ export const Modal = ({closeModalHandle, datalistItems}) => {
 
 export const HeaderCarousel = () => {
   return(
-    <div className=" max-w-7xl mx-auto">
-      <div className=" grid grid-cols-3 gap-5 mt-5">
+    <div className=" ">
+      <div className=" grid grid-cols-1 gap-5 mt-5 md:grid-cols-3 md:max-w-7xl md:mx-auto">
         {datalist.map(item => (
-           <div className="flex relative w-400 h-300">
-           <h1 className=" absolute z-20 text-white-white font-PlayFair text-2xl p-2">{item.name} {item.icon}</h1>
+           <div className="flex relative w-200 h-200 m-3 md:w-400 md:h-300">
+           <h1 className=" absolute z-20 text-white-white font-PlayFair text-1xl p-2 ">{item.name} {item.icon}</h1>
           
            <Image src={item.url} layout="fill" />
           </div>

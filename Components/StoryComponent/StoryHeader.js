@@ -13,16 +13,16 @@ import Stories from "../Stories"
 function StoryHeader() {
   return (
     <div >
-      <div className="mx-auto mt-20 pl-32">
-          <h1 className=" font-PlayFair-Bold font-bold text-9xl">Our Story.</h1>
-          <h1 className=" font-PlayFair-Bold font-bold text-9xl">Your Story.</h1>
+      <div className=" mt-20 pl-10 md:mx-auto">
+          <h1 className=" font-PlayFair-Bold font-bold text-6xl">Our Story.</h1>
+          <h1 className=" font-PlayFair-Bold font-bold text-6xl">Your Story.</h1>
       </div>
       <SectionOne/>
-      <SectionTwo/>
-      <SectionThree/>
+       <SectionTwo/>
+      {/* <SectionThree/>
       <FourthSection/>
       <Purpose/>
-      <Stories/>
+      <Stories/>  */}
     </div>
   )
 }
@@ -33,15 +33,15 @@ export default StoryHeader
 export const SectionOne = () => {
   return(
     <div className="">
-    <div className=" max-w-6xl mx-auto grid grid-cols-3 gap-16">
-      <div className=" transform -rotate-90 mt-32 flex flex-col gap-10">
+    <div className=" max-w-6xl mx-auto grid grid-cols-1 gap-16 md:grid-cols-3 ">
+      <div className=" transform rotate-270 mt-32 ml-10 flex flex-col gap-10 md:-rotate-90 ">
         <h2>LOUISE MORE</h2>
         <hr className=" w-52 border-black" />
       </div>
-      <div className=" items-center justify-center flex mt-32 text-2xl font-PlayFair-Bold italic">
-        <h3>Our Family is so much bigger than my children and my grandchildren. I have had the privilege of being the custodian of this incredible land for 80 years. Our family home belongs to the rich natural kingdom, our people and our guests. Being able to share this extraordinary place with so many others, and contributing to its sustainability for generations to come, has been such a gift. </h3>
+      <div className=" items-center justify-center flex mt-10 text-1xl font-PlayFair-Bold italic pl-10 md:mt-32">
+        <h3 className="pr-5">Our Family is so much bigger than my children and my grandchildren. I have had the privilege of being the custodian of this incredible land for 80 years. Our family home belongs to the rich natural kingdom, our people and our guests. Being able to share this extraordinary place with so many others, and contributing to its sustainability for generations to come, has been such a gift. </h3>
       </div>
-      <div className="mt-32">
+      <div className="mt-10 md:mt-32 ml-10 mr-10">
         <Image src={PhotoImage} width={1000} height={1000} className="filter grayscale" />
       </div>
     </div>
@@ -53,14 +53,14 @@ export const SectionOne = () => {
 
 export const SectionTwo = () => {
   return(
-    <div className=" h-800 mt-32">
-      <div className=" max-w-7xl mx-auto">
-        <div className=" grid grid-cols-2 gap-5 ">
-          <div className="flex">
+    <div className="mt-32">
+      <div className="">
+        <div className=" grid grid-cols-1 gap-5 md:grid-cols-2 ">
+          <div className="flex ml-10 ">
           <h2 className="transform -rotate-90 ">Rober John</h2>
-          <h1 className=" text-8xl font-PlayFair-Bold font-bold text-black">We are a family</h1>
+          <h1 className=" text-5xl font-PlayFair-Bold font-bold text-black">We are a family</h1>
           </div>
-          <div className=" bg-yellow-50 w-1000 p-5 z-20 ">
+          <div className=" bg-yellow-50 m-2 md:w-1000 z-20 ">
             <p className="text-1xl font-Raleway text-black font-bold">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>  
           </div>
         </div>

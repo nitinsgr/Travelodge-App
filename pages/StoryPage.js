@@ -7,7 +7,7 @@ function StoryPage() {
     <div>
       <Header/>
       <StoryHeader/>
-      <Foooter/>
+      {/* <Foooter/> */}
     </div>
   )
 }
