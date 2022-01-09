@@ -1,7 +1,7 @@
 function Foooter() {
     return (
-        <div className="h-500 bg-gray-darkest">
-            <div className=" flex justify-between max-w-7xl mx-auto">
+        <div className=" bg-gray-darkest">
+            <div className=" flex flex-col justify-between max-w-7xl mx-auto md:flex-row text-center items-center ">
                 <h1 className="text-5xl text-white-white font-Raleway font-bold mt-20">Travelodge</h1>
                 <div className="flex space-x-3 text-white-white font-Raleway m-20">
                 <h2>Facebook</h2>
@@ -10,7 +10,7 @@ function Foooter() {
                 </div>
             </div>
             <hr className="m-10 max-w-7xl mx-auto"/>
-            <div className=" grid grid-cols-4 max-w-7xl mx-auto">
+            <div className=" grid grid-cols-1 max-w-7xl mx-auto md:grid-cols-4">
                 <div className="flex flex-col text-white-white space-y-5">
                     <h2 className="text-2xl text-white-white font-bold">Lodge & Hotels</h2>
                     <p>Mountain Range Lodge</p>

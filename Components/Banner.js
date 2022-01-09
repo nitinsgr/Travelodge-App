@@ -48,7 +48,7 @@ const Banner = () => {
     return (
         <>
       
-        <div className=' h-1000 pt-20 bg-bgImage bg-cover bg-center '>
+        <div className='pt-20 bg-bgImage bg-cover bg-center h-500 pb-32 md:h-screen '>
             <div className='max-w-7xl mx-auto'>
               <div className=" flex flex-row ">   
                 <input
@@ -61,7 +61,7 @@ const Banner = () => {
                
             </div>
             {searchInput &&  
-            <div className=' flex flex-row col-span-3 mx-auto bg-white-white  mt-10 p-16 font-PlayFair '>
+            <div className=' flex flex-col col-span-3 mx-auto bg-white-white  mt-10 p-16 font-PlayFair md:flex-row'>
                 <DateRangePicker
                  ranges={[selectionRanges]}
                     minDate= {new Date()}
@@ -89,7 +89,7 @@ const Banner = () => {
         </div>
         </div>
         <About/>
-        <Destination/>
+        <Destination/> 
         </>
 
     )

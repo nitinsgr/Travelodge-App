@@ -15,7 +15,7 @@ import { motion } from "framer-motion"
 
 export default function Home({exploreData}) {
   return (
-    <div> 
+    <div className=""> 
       <Header/>
       <Banner/>      
       <Foooter/>

@@ -5,7 +5,7 @@ import facesImage from '../images/faces.jpg'
 
 function Stories() {
   return (
-    <div className=" h-screen ">
+    <div className=" mb-20 mt-20">
       <Header/>
       <Blogs/>
     </div>
@@ -17,9 +17,9 @@ export default Stories
 export const Header = () => {
   return(
     <>
-    <div className="max-w-7xl mx-auto mt-20 ">
+    <div className="max-w-7xl mx-auto mt-20 p-5">
       <h3 className=" font-Raleway">MORE STORIES</h3>
-      <h1 className=" font-PlayFair-Bold font-bold text-7xl w-9/12">What's Happening at Travelodge?</h1>
+      <h1 className=" font-PlayFair-Bold font-bold text-4xl w-9/12">What's Happening at Travelodge?</h1>
     </div>  
     </> 
   )
@@ -29,7 +29,7 @@ export const Header = () => {
 export const Blogs = () => {
   return(
     <>
-      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-10">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 gap-10 md:grid-cols-3 p-5">
         <div className="flex flex-col  pt-10">
           <Image src={sunriseImage} width={500} height={400} />
           
