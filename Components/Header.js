@@ -86,7 +86,7 @@ function Header()
 export default Header
 
 
-export const Modal = ({closeModalHandle, datalistItems}) => {
+export const Modal = ({closeModalHandle}) => {
     return(
        <div className=" bg-gray-800 transform duration-1000 ease-in">
            <div className=" justify-between flex p-2 md:max-w-7xl md:mx-auto ">    
