@@ -5,7 +5,7 @@ function SectionFour() {
   return (
     <>
     <div className="max-w-7xl mx-auto mt-32">
-    <div className="flex justify-items-center ">
+    <div className="flex justify-items-center flex-col md:flex-row ">
       <div className="">
         <Image src={lightImage} width={900} height={550} />
       </div>
@@ -19,17 +19,17 @@ function SectionFour() {
     </div>
    
   </div>
-   <div className=" mt-10 grid grid-cols-3 gap-5 pb-20 max-w-7xl mx-auto">
+   <div className=" mt-10 grid md:grid-cols-3 gap-5 pb-20 max-w-7xl mx-auto grid-cols-1">
     <div className=" bg-glass h-200 bg-center bg-cover">
     </div>
-    <div className=" bg-lion h-200 w-400 bg-center bg-cover">
+    <div className=" bg-lion h-200 md:h-400 bg-center bg-cover">
     </div>
-    <div className=" flex flex-col mr-10">
+    <div className=" flex flex-col m-10">
       <p>Cape Town | Lion Sands Game Reserve</p>
       <hr className="border-yellow-400 mt-2"/>
       <div className=" flex mt-10">
-        <button className=" p-3 font-Raleway border border-black">Download Package Info</button>
-        <button className="p-3 bg-black text-white-white ml-5">View This Package</button>
+        <button className=" p-2 md:p-3 font-Raleway border border-black text-sm ">Download Package Info</button>
+        <button className="p-2 md:p-3 text-sm bg-black text-white-white ml-5">View This Package</button>
       </div>
     </div>
  </div>
