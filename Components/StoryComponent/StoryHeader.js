@@ -13,9 +13,9 @@ import Stories from "../Stories"
 function StoryHeader() {
   return (
     <div >
-      <div className=" mt-20 pl-10 md:mx-auto">
-          <h1 className=" font-PlayFair-Bold font-bold text-6xl">Our Story.</h1>
-          <h1 className=" font-PlayFair-Bold font-bold text-6xl">Your Story.</h1>
+      <div className="mt-20 ml-20">
+          <h1 className=" font-PlayFair-Bold font-bold text-5xl md:text-8xl">Our Story.</h1>
+          <h1 className=" font-PlayFair-Bold font-bold text-5xl md:text-8xl">Your Story.</h1>
       </div>
       <SectionOne/>
        <SectionTwo/>
@@ -55,16 +55,16 @@ export const SectionTwo = () => {
   return(
     <div className="mt-32">
       <div className="">
-        <div className=" grid grid-cols-1 gap-5 md:grid-cols-2 ">
+        <div className=" grid grid-cols-1 gap-5 md:grid-cols-2 md:max-w-7xl md:mx-auto ">
           <div className="flex ml-10 ">
           <h2 className="transform -rotate-90 ">Rober John</h2>
-          <h1 className=" text-5xl font-PlayFair-Bold font-bold text-black">We are a family</h1>
+          <h1 className=" text-5xl font-PlayFair-Bold font-bold text-black md:text-8xl">We are a family</h1>
           </div>
           <div className=" bg-yellow-50 m-2 md:w-1000 z-20 ">
-            <p className="text-1xl font-Raleway text-black font-bold">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>  
+            <p className="text-1xl font-Raleway text-black font-bold md:p-10">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>  
           </div>
         </div>
-        <div className=" mt-5">
+        <div className="md:m-52">
           <Image src={cookImage} className="filter grayscale"  />
         </div>
       </div>
