@@ -1,4 +1,4 @@
-import lightImage from '../../Images/Lightw.jpg'
+import lightImage from '../../static/Lightw.jpg'
 import Image from "next/image"
 
 function SectionFour() {

@@ -1,5 +1,5 @@
 import Image from "next/image"
-import sunsetImage from '../../Images/sunset.jpg'
+import sunsetImage from '../../static/sunset.jpg'
 import SectionFour from "./SectionFour"
 import SectionOne from "./SectionOne"
 import SectionThree from "./SectionThree"

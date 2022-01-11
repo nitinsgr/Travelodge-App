@@ -1,12 +1,12 @@
 import Image from "next/image"
-import PhotoImage from '../../Images/Louise.jpg'
-import cookImage from '../../Images/Cook.jpg'
-import oldImage from '../../Images/oldies.jpg'
-import CeoImage from '../../Images/Ceo.jpg'
-import LadyImage from '../../Images/Lady.jpg'
-import OldieImage from '../../Images/OldLady.jpg'
-import LadyImage2 from '../../Images/Lady2.jpg'
-import studentImage from '../../Images/STUDENT.jpg'
+import PhotoImage from '../../static/Louise.jpg'
+import cookImage from '../../static/Cook.jpg'
+import oldImage from '../../static/oldies.jpg'
+import CeoImage from '../../static/Ceo.jpg'
+import LadyImage from '../../static/Lady.jpg'
+import OldieImage from '../../static/OldLady.jpg'
+import LadyImage2 from '../../static/Lady2.jpg'
+import studentImage from '../../static/STUDENT.jpg'
 import Stories from "../Stories"
 
 

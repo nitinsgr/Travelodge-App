@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import FamilyImage from '../../Images/Family.jpg'
+import FamilyImage from '../../static/Family.jpg'
 
 function SectionThree() {
   return (

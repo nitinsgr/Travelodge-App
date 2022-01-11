@@ -1,7 +1,5 @@
 import Image from "next/image"
-import boneImage from '../../Images/BoneFire.jpg'
-import leooImage from '../../Images/Leo.jpg'
-import coffeeImage from '../../Images/coffee.jpg'
+import boneImage from '../../static/BoneFire.jpg'
 
 function SectionTwo() {
   return (
