@@ -36,19 +36,19 @@ module.exports = {
   
         },
         backgroundImage : {
-          'bgImage' : "url('../images/forest.jpg')",
-          'LeoImage' : "url('../images/Leo.jpg')",
-          'BinaImage' : "url('../images/Bina.jpg')",
-          'SherImage' : "url('../images/Sher.jpg')",
-          'safari' : "url('../images/safari1.jpg')",
-          'Treehouse': "url('../images/Treehouse1.jpg')",
-          'Celebration' : "url('../images/Celebration.jpg')",
-          'Ceo' : "url('../images/Ceo.jpg')",
-          'sunset' : "url('../images/sunset.jpg')",
-          'coffee' : "url('../images/coffee.jpg')",
-          'light' : "url('../images/lightw.jpg')",
-          'lion' : "url('../images/Lionw.jpg')",
-          'glass' : "url('../images/glassw.jpg')"
+          'bgImage' : "url('../Images/forest.jpg')",
+          'LeoImage' : "url('../Images/Leo.jpg')",
+          'BinaImage' : "url('../Images/Bina.jpg')",
+          'SherImage' : "url('../Images/Sher.jpg')",
+          'safari' : "url('../Images/safari1.jpg')",
+          'Treehouse': "url('../Images/Treehouse1.jpg')",
+          'Celebration' : "url('../Images/Celebration.jpg')",
+          'Ceo' : "url('../Images/Ceo.jpg')",
+          'sunset' : "url('../Images/sunset.jpg')",
+          'coffee' : "url('../Images/coffee.jpg')",
+          'light' : "url('../Images/lightw.jpg')",
+          'lion' : "url('../Images/Lionw.jpg')",
+          'glass' : "url('../Images/glassw.jpg')"
 
         },
         fontFamily : {
