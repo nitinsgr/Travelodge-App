@@ -36,7 +36,7 @@ module.exports = {
   
         },
         backgroundImage : {
-          'bgImage' : "url('./public/Images/forest.jpg')",
+          'bgImage' : "url('../Images/forest.jpg')",
           'LeoImage' : "url('../Images/Leo.jpg')",
           'BinaImage' : "url('../Images/Bina.jpg')",
           'SherImage' : "url('../Images/Sher.jpg')",

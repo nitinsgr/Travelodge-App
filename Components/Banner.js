@@ -7,7 +7,6 @@ import { DateRangePicker } from 'react-date-range';
 import { useRouter } from 'next/dist/client/router';
 import About from './About';
 import Destination from './Destination';
-import bgImage from '../public/Images/forest.jpg'
 
 
 const Banner = () => {
@@ -50,7 +49,7 @@ const Banner = () => {
     return (
         <>
       
-        <div className='pt-20 bg-bgImage bg-cover bg-center h-500 pb-32 md:h-screen '>
+        <div className='pt-20 bg-bgImage bg-cover bg-center h-500 pb-32 md:h-screen'>
             <div className='max-w-7xl mx-auto'>
               <div className=" flex flex-row ">   
                 <input
