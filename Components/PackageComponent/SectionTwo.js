@@ -9,7 +9,7 @@ function SectionTwo() {
       <div className="max-w-7xl mx-auto mt-32">
       <div className="flex justify-items-center flex-col md:flex-row ">
         <div className="m-5">
-          <Image src={boneImage} width={800} height={550} />
+          <Image src={boneImage} width={800} height={550} alt="" />
         </div>
         <div className="pt-5 pl-10">
           <p>ULTIMATE GATEWAY</p>

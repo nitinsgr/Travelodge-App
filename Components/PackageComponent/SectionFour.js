@@ -7,7 +7,7 @@ function SectionFour() {
     <div className="max-w-7xl mx-auto mt-32">
     <div className="flex justify-items-center flex-col md:flex-row ">
       <div className="">
-        <Image src={lightImage} width={900} height={550} />
+        <Image src={lightImage} width={900} height={550} alt='' />
       </div>
       <div className="pt-5 pl-10">
         <p>ULTIMATE GATEWAY</p>

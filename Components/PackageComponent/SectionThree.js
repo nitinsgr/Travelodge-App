@@ -23,7 +23,7 @@ export const Two = () => {
           <h2 className="text-2xl font-PlayFair-Bold font-semibold">Stay 6 nights/7 days US$ 2 867 per person sharing (Indicative price)</h2>
         </div>
         <div className="m-5">
-          <Image src={FamilyImage} width={800} height={550} />
+          <Image src={FamilyImage} width={800} height={550} alt='' />
         </div>
       </div>
       

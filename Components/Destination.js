@@ -64,7 +64,7 @@ export const MapSection = () => {
         <button className="p-4 border-2 border-black text-1xl font-PlayFair   hover:border-b-8 mb-10 transform transition-all duration-200 ease-in-out hover:shadow-xl">Explore Now</button>
       </div>
       <div className=" md:ml-32 border-none outline-none">
-        <Image src={MapImage} width={900} height={900}/>
+        <Image src={MapImage} width={900} height={900} alt=""/>
       </div>
     </div>
 
@@ -86,7 +86,7 @@ export const EmblaCarousel = () => {
     <div className="embla__slide bg-white">
       <div className="flex md:flex-row">
         <div className="hidden md:block">
-          <Image src={LionImage} width={1800 } height={1200} />
+          <Image src={LionImage} width={1800 } height={1200} alt="" />
         </div>
         <div className="flex flex-col md:ml-20">
           <hr className="h-12 border border-black w-0 mb-5"/>
@@ -104,7 +104,7 @@ export const EmblaCarousel = () => {
     <div className="embla__slide">
     <div className="flex">
         <div className="hidden md:block">
-          <Image src={PeopleImage} width={1800} height={1200} />
+          <Image src={PeopleImage} width={1800} height={1200} alt="" />
         </div>
         <div className="flex flex-col mx-auto md:ml-20 ">
           <hr className="h-12 border border-black w-0 mb-5"/>
@@ -123,7 +123,7 @@ export const EmblaCarousel = () => {
     <div className="embla__slide">
     <div className="flex">
         <div className="hidden md:block">
-          <Image src={CelebrationImage} width={1800} height={1200} />
+          <Image src={CelebrationImage} width={1800} height={1200} alt="" />
         </div>
         <div className="flex flex-col mx-auto md:ml-20">
         <hr className="h-12 border border-black w-0 mb-5"/>
@@ -140,7 +140,7 @@ export const EmblaCarousel = () => {
     <div className="embla__slide">
     <div className="flex">
         <div className="hidden md:block">
-          <Image src={kidsImage} width={1800} height={1200} />
+          <Image src={kidsImage} alt="" width={1800} height={1200} />
         </div>
         <div className="flex flex-col mx-auto md:ml-20">
         <hr className="h-12 border border-black w-0 mb-5"/>
@@ -157,7 +157,7 @@ export const EmblaCarousel = () => {
     <div className="embla__slide">
     <div className="flex">
         <div className="hidden md:block">
-          <Image src={safariImage} width={1800} height={1200} />
+          <Image src={safariImage} width={1800} height={1200} alt="" />
         </div>
         <div className="flex flex-col mx-auto md:ml-20">
         <hr className="h-12 border border-black w-0 mb-5"/>

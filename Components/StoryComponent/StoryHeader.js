@@ -42,7 +42,7 @@ export const SectionOne = () => {
         <h3 className="pr-5">Our Family is so much bigger than my children and my grandchildren. I have had the privilege of being the custodian of this incredible land for 80 years. Our family home belongs to the rich natural kingdom, our people and our guests. Being able to share this extraordinary place with so many others, and contributing to its sustainability for generations to come, has been such a gift. </h3>
       </div>
       <div className="mt-10 md:mt-32 ml-10 mr-10">
-        <Image src={PhotoImage} width={1000} height={1000} className="filter grayscale" />
+        <Image src={PhotoImage} width={1000} height={1000} className="filter grayscale" alt="" />
       </div>
     </div>
     </div>
@@ -79,7 +79,7 @@ export const SectionThree = () => {
       <div className=" max-w-7xl mx-auto">
          <div className="grid grid-cols-1 col-span-2 gap-10 md:grid-cols-2">
            <div className="m-10 md:m-0">
-           <Image src={oldImage} width={400} height={500} className="     filter grayscale scale-75 " />
+           <Image src={oldImage} width={400} height={500} className="     filter grayscale scale-75 " alt="" />
            </div>
             <div>
               <h2 className="text-1xl font-PlayFair-Bold md:text-3xl p-10 md:p-0 md:pb-10 ">We celebrate our individuality. It’s through our different and unique talents, aligned in the common purpose to enrich our guests lives, that we create a meaningful impact in the world.</h2>
@@ -110,7 +110,7 @@ export const FourthSection = () => {
         <div className="relative md:p-5">
           <h2 className="absolute z-20 text-2xl font-Raleway text-white-white">Hugh jackson</h2>
           <h2 className=" absolute z-20 pt-8 font-Raleway text-white-white">CEO, Travelodge</h2>
-        <Image src={CeoImage} className=" filter grayscale" />
+        <Image src={CeoImage} className=" filter grayscale"  alt=""/>
         </div>
         
         <div className="relative">
@@ -118,7 +118,7 @@ export const FourthSection = () => {
           <h2 className=" text-2xl font-Raleway  text-white-white">Tanya Winters</h2>
           <h2 className="pt-2 font-Raleway text-white-white">Manager Safari Lodge, Africa Region</h2>
           </div>
-        <Image src={LadyImage} className=" filter grayscale" />
+        <Image src={LadyImage} className=" filter grayscale"  alt=""/>
         </div>
       
       </div>
@@ -128,7 +128,7 @@ export const FourthSection = () => {
             <h2 className="text-2xl font-Raleway pl-2 text-white-white">Lillie-Rose Arroyo</h2>
             <h2 className=" text-1xl font-Raleway pl-2 pt-1 text-white-white">Founder Treehouse Lodge</h2>
           </div>
-        <Image src={LadyImage2} className=" filter grayscale w-400" />
+        <Image src={LadyImage2} className=" filter grayscale w-400"  alt=""/>
         </div>
         <div className=" relative flex items-end">
           <div className=" absolute z-20">
@@ -142,7 +142,7 @@ export const FourthSection = () => {
             <h2 className="text-2xl font-Raleway pl-2 text-white-white">Hector Newman</h2>
             <h2 className=" text-1xl font-Raleway pl-2 pt-1 text-white-white">Co-Founder Treehouse Lodge</h2>
           </div>
-          <Image src={studentImage} className=" filter grayscale w-400" />
+          <Image src={studentImage} className=" filter grayscale w-400" alt="" />
         </div>
       </div>
     </div>
