@@ -49,28 +49,32 @@ const Banner = () => {
     }
     return (
         <>
-        <div className=' relative h-800'>
-        <Image src={forestImage} layout='fill' />
-        <div className='pt-20 h-800 pb-32 md:absolute relative ' >
-            <div className='md:max-w-7xl md:mx-auto'>
+        <div className=' relative  h-1000'>
+        <Image src={forestImage}  layout='fill' objectFit='cover' />
+        <div className='pt-20 h-800 pb-32 md:absolute absolute  ' >
+            <div className='md:max-w-7xl md:mx-auto absolute'>
               <div className=" flex flex-row items-center justify-items-center ">   
                 <input
                 value={searchInput}
                 onChange={(e)=> setSearchInput(e.target.value) }
-                            className=" w-1000 ml-96 p-3 items-center justify-items-center bg-white-white flex-grow outline-none text-gray-600 font-PlayFair  placeholder-gray-800" type="text"
+                            className=" md:ml-96 md:w-[100vh] w-400 rounded-xl ml-10  p-3 items-center justify-items-center bg-white-white flex-grow outline-none text-gray-600 font-PlayFair  placeholder-gray-800" type="text"
                             placeholder={"Explore Now"}
                         />
-                {searchInput &&  <SearchIcon className="h-8 bg-red-400 text-white rounded-full p-2  cursor-pointer hidden md:inline-flex mr-5 md:mx-2"/> }
+                {searchInput &&  <SearchIcon className="h-8 bg-black text-white-white rounded-full p-2  cursor-pointer hidden md:inline-flex mr-5 md:mx-2"/> }
                
             </div>
             {searchInput &&  
             <div className=' flex flex-col col-span-3 bg-white-white mt-10 p-16 font-PlayFair md:flex-row transform md:translate-x-96'>
+                <div>
                 <DateRangePicker
                  ranges={[selectionRanges]}
                     minDate= {new Date()}
                     color='#F9D371'
                     onChange={handleSelect}
                 />
+
+                    </div>
+               
                 <div className="flex flex-col items-center border-b mb-4 pl-10">
                     <div className='flex items-center gap-2 pb-5'>
                         <h2 className="text-lg  font-semibold">Number of Guests</h2>

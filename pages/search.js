@@ -22,7 +22,7 @@ function Search({searchResults}) {
             <Header placeholder={`${location} | ${range} | ${numberOfGuests}`} />
             
             <main className="flex font-PlayFair-Bold font-bold">
-                <section className="flex-grow max-w-screen-full pt-14 px-6">
+                <section className="flex-grow max-w-screen-full pt-14 px-6 flex-col">
                     
                     <p className=" text-xs px-4">300+ stays {range} for {numberOfGuests} guests in map area</p>
                     <h1 className="text-3xl font-semibold mt-2 px-4 mb-6">Stays in {location}</h1>
@@ -39,8 +39,8 @@ function Search({searchResults}) {
                     </div>
 
                     {/* Mapping the actual json file and passing the props to the infocard component */}
-
-                
+                    
+               
                 </section>
 
                 {/* Map component */}
