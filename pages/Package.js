@@ -5,9 +5,9 @@ import PackageBanner from "../Components/PackageComponent/PackageBanner"
 function Package() {
   return (
     <div>
-      <Header/>
+      <Header/> 
       <PackageBanner/>
-      <Foooter/>
+       <Foooter/> 
     </div>
   )
 }
