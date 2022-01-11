@@ -50,7 +50,7 @@ const Banner = () => {
     return (
         <>
       
-        <div className='pt-20 bg-bg` bg-cover bg-center h-500 pb-32 md:h-screen '>
+        <div className='pt-20 bg-bgImage bg-cover bg-center h-500 pb-32 md:h-screen '>
             <div className='max-w-7xl mx-auto'>
               <div className=" flex flex-row ">   
                 <input
