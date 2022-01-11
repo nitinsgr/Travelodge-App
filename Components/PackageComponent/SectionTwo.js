@@ -7,8 +7,8 @@ function SectionTwo() {
   return (
     <>
       <div className="max-w-7xl mx-auto mt-32">
-      <div className="flex justify-items-center ">
-        <div className="">
+      <div className="flex justify-items-center flex-col md:flex-row ">
+        <div className="m-5">
           <Image src={boneImage} width={800} height={550} />
         </div>
         <div className="pt-5 pl-10">
@@ -21,17 +21,17 @@ function SectionTwo() {
       </div>
      
     </div>
-     <div className=" mt-10 grid grid-cols-3 gap-5 pb-20 max-w-7xl mx-auto">
-      <div className=" bg-LeoImage h-200 bg-center bg-cover">
+     <div className=" mt-10 grid md:grid-cols-3 grid-cols-1 gap-5 pb-20 max-w-7xl mx-auto">
+      <div className=" bg-LeoImage h-200 bg-center bg-cover m-5">
       </div>
-      <div className=" bg-coffee h-200 w-400 bg-center bg-cover">
+      <div className=" bg-coffee h-200 bg-center bg-cover md:h-400 m-5">
       </div>
-      <div className=" flex flex-col mr-10">
+      <div className=" flex flex-col m-10">
         <p>Cape Town | Lion Sands Game Reserve</p>
         <hr className="border-yellow-400 mt-2"/>
         <div className=" flex mt-10">
-          <button className=" p-3 font-Raleway border border-black">Download Package Info</button>
-          <button className="p-3 bg-black text-white-white ml-5">View This Package</button>
+          <button className=" p-2 md:p-4 text-sm font-Raleway border border-black">Download Package Info</button>
+          <button className="p-2 md:p-4 text-sm bg-black text-white-white ml-5">View This Package</button>
         </div>
       </div>
    </div>
