@@ -111,7 +111,8 @@ export const HeaderCarousel = () => {
     <div className=" ">
       <div className=" grid grid-cols-1 gap-5 mt-5 md:grid-cols-3 md:max-w-7xl md:mx-auto">
         {datalist.map(item => (
-           <div className="flex relative w-200 h-200 m-3 md:w-400 md:h-300">
+            
+           <div key={item.id} className="flex relative w-200 h-200 m-3 md:w-400 md:h-300">
            <h1 className=" absolute z-20 text-white-white font-PlayFair text-1xl p-2 ">{item.name} {item.icon}</h1>
           
            <Image src={item.url} layout="fill" />
