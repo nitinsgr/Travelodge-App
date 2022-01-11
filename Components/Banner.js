@@ -8,6 +8,7 @@ import { useRouter } from 'next/dist/client/router';
 import About from './About';
 import Destination from './Destination';
 
+
 const Banner = () => {
     const [searchInput, setSearchInput] = useState(""); // To get the location of the user
     const [startDate, setStartDate] = useState(new Date()); // To get the start Date of booking
