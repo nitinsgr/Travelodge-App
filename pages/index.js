@@ -2,12 +2,9 @@
 
 import Banner from "../Components/Banner";
 import Header from "../Components/Header";
-import MediumCard from "../Components/MediumCard";
-import SmallCard from "../Components/SmallCard";
 import CardImage from '../Images/Arizona2.jpg'
 import Image from 'next/image'
-import HomeImage from '../Images/Home.jpg'
-import LargeCard from "../Components/LargeCard";
+
 import Foooter from "../Components/Foooter";
 import SecHeader from "../Components/SecHeader";
 import { motion } from "framer-motion"

@@ -2,7 +2,6 @@ import format from "date-fns/format";
 import { useRouter } from "next/dist/client/router"
 import Foooter from "../Components/Foooter"
 import Header from "../Components/Header"
-import InfoCard from "../Components/infoCard";
 import Map from "../Components/Map";
 
 function Search({searchResults}) {
@@ -41,25 +40,7 @@ function Search({searchResults}) {
 
                     {/* Mapping the actual json file and passing the props to the infocard component */}
 
-                    <div className="flex flex-col ">
-                        {searchResults.map(
-                            ({ img, location, title, description, star, price,
-                                total }) => (
-                        <InfoCard
-                           key={img}
-                            img={img}
-                            location={location}
-                            title={title}
-                            description={description}
-                            star={star}
-                            price={price}
-                            total={total}
-                        
-                        />
-                        
-                    ))}
-                    </div>
-                      
+                
                 </section>
 
                 {/* Map component */}
