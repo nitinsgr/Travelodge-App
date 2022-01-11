@@ -1,7 +1,7 @@
 import Image from "next/image"
-import sunriseImage from '../Images/sunrise.jpg'
-import waterImage from '../Images/water.jpeg'
-import facesImage from '../Images/faces.jpg'
+import sunriseImage from '../static/sunrise.jpg'
+import waterImage from '../static/water.jpeg'
+import facesImage from '../static/faces.jpg'
 
 function Stories() {
   return (

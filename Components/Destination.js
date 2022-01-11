@@ -1,12 +1,12 @@
 import Image from "next/image"
-import MapImage from '../Images/Map.png'
+import MapImage from '../static/Map.png'
 
 import useEmblaCarousel from 'embla-carousel-react'
-import LionImage from '../Images/Lion.jpg'
-import PeopleImage from '../Images/People.jpg'
-import kidsImage from '../Images/2.jpg'
-import CelebrationImage from '../Images/Celebration.jpg'
-import safariImage from '../Images/safari1.jpg'
+import LionImage from '../static/Lion.jpg'
+import PeopleImage from '../static/People.jpg'
+import kidsImage from '../static/2.jpg'
+import CelebrationImage from '../static/Celebration.jpg'
+import safariImage from '../static/safari1.jpg'
 import Stories from "./Stories"
 import Form from "./Form"
 

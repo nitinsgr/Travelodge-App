@@ -2,7 +2,6 @@
 
 import Banner from "../Components/Banner";
 import Header from "../Components/Header";
-import CardImage from '../Images/Arizona2.jpg'
 import Image from 'next/image'
 
 import Foooter from "../Components/Foooter";
