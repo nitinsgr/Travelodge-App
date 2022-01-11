@@ -6,7 +6,7 @@ import LionImage from '../Images/Lion.jpg'
 import PeopleImage from '../Images/People.jpg'
 import kidsImage from '../Images/2.jpg'
 import CelebrationImage from '../Images/Celebration.jpg'
-import safariImage from '../Images/safari.jpg'
+import safariImage from '../Images/safari1.jpg'
 import Stories from "./Stories"
 import Form from "./Form"
 
