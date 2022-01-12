@@ -8,9 +8,10 @@ import SectionTwo from "./SectionTwo"
 function PackageBanner() {
   return (
     <div className="">
-    <div className=" bg-sunset h-1000 md:h-800 bg-center bg-cover bg-no-repeat bg-fixed">
-      <div className=" max-w-7xl mx-auto pt-10 p-5">
-      <h1 className="text-5xl text-white-white font-PlayFair-Bold font-bold md:w-1/4">Exceptional Experiences</h1>
+    <div className=" relative h-1000 md:h-800 bg-center bg-cover bg-no-repeat bg-fixed">
+      <Image src={sunsetImage} objectFit="cover" layout="fill" />
+      <div className=" absolute z-20 max-w-7xl mx-auto pt-10 p-5">
+      <h1 className="text-4xl md:text-8xl text-white-white font-PlayFair-Bold font-bold md:w-1/4">Exceptional Experiences</h1>
       <p className=" text-2xl font-Raleway text-white-white pt-5">Best Of Southern Africa</p>
       </div>
      
