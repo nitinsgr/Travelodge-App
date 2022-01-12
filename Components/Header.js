@@ -56,9 +56,9 @@ function Header()
        </Link>
       </div>
       <div className="menu-icon" onClick={handleClick}>
-       {active ? <MenuIcon className="w-8 h-8"/> : <PlusIcon className="w-8 h-8  rotate-45"/>}
+       {active ? <MenuIcon className="w-8 h-8"/> : <MenuIcon className="w-8 h-8  rotate-45"/>}
       </div>
-      <ul className={active ? "nav-menu flex active items-center bg-white" : "nav-menu space-x-6  font-Krona font-light text-sm  "}>
+      <ul className={active ? "nav-menu flex active items-center bg-white text-2xl  space-y-10" : "nav-menu  space-x-10  font-Krona font-light text-sm  "}>
         <li>Hotel & Lodges</li>
         <li onClick={openModalHandle}>Experiences</li>
         <Link href={"/StoryPage"}>
