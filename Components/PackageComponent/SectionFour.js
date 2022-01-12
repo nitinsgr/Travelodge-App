@@ -1,4 +1,7 @@
 import lightImage from '../../static/Lightw.jpg'
+import glassImage from '../../static/glassw.jpg'
+
+import lionImage from '../../static/Sher.jpg' 
 import Image from "next/image"
 
 function SectionFour() {
@@ -20,9 +23,11 @@ function SectionFour() {
    
   </div>
    <div className=" mt-10 grid md:grid-cols-3 gap-5 pb-20 max-w-7xl mx-auto grid-cols-1">
-    <div className=" bg-glass h-200 bg-center bg-cover">
+    <div className="m-5 relative h-200">
+      <Image src={glassImage} layout='fill' objectFit='cover' alt=''/>
     </div>
-    <div className=" bg-lion h-200 md:h-400 bg-center bg-cover">
+    <div className=" relative h-200 m-5">
+      <Image src={lionImage} objectFit='cover' layout='fill' alt='' />
     </div>
     <div className=" flex flex-col m-10">
       <p>Cape Town | Lion Sands Game Reserve</p>

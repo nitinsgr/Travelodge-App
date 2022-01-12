@@ -1,5 +1,7 @@
 import Image from "next/image"
 import boneImage from '../../static/BoneFire.jpg'
+import leoImage from '../../static/Leo.jpg'
+import coffeeImage from '../../static/coffee.jpg'
 
 function SectionTwo() {
   return (
@@ -20,9 +22,11 @@ function SectionTwo() {
      
     </div>
      <div className=" mt-10 grid md:grid-cols-3 grid-cols-1 gap-5 pb-20 max-w-7xl mx-auto">
-      <div className=" bg-LeoImage h-200 bg-center bg-cover m-5">
+      <div className=" relative m-5 h-200">
+        <Image src={leoImage} layout="fill" objectFit="cover" alt=""/>
       </div>
-      <div className=" bg-coffee h-200 bg-center bg-cover md:h-400 m-5">
+      <div className=" relative m-5 h-200">
+        <Image src={coffeeImage} layout="fill" objectFit="cover" alt="" />
       </div>
       <div className=" flex flex-col m-10">
         <p>Cape Town | Lion Sands Game Reserve</p>

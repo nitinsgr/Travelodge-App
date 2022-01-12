@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import FamilyImage from '../../static/Family.jpg'
+import BinaImage from '../../static/Bina.jpg'
+import coffeeImage from '../../static/coffee.jpg'
 
 function SectionThree() {
   return (
@@ -39,9 +41,11 @@ export const Two = () => {
        </div>
      </div>
     
-     <div className=" bg-BinaImage h-200 bg-center bg-cover md:w-200 m-5">
+     <div className=" relative h-200 m-5">
+       <Image src={BinaImage} layout='fill' objectFit='cover' alt=''/>
      </div>
-     <div className=" bg-coffee h-200  bg-center bg-cover m-5">
+     <div className=" relative h-200 m-5">
+       <Image src={coffeeImage} layout='fill' objectFit='cover' alt='' />
      </div>
   </div>
     </>

@@ -8,6 +8,9 @@ import kidsImage from '../static/2.jpg'
 import CelebrationImage from '../static/Celebration.jpg'
 import safariImage from '../static/safari1.jpg'
 import Stories from "./Stories"
+import leoImage from '../static/Leo.jpg'
+import BinaImage from '../static/Bina.jpg'
+import SherImage from '../static/Sher.jpg'
 import Form from "./Form"
 
 function Destination() {
@@ -183,12 +186,12 @@ export const MultiContainer = () => {
   return(
     <>
       <div className="flex mt-32 flex-col md:flex-row">
-        <div className=" bg-gray-200 h-80 items-start justify-items-center justify-center pl-5 flex flex-col md:w-6/12">
+        <div className=" bg-gray-200 h-96   items-start justify-items-center justify-center pl-5 flex flex-col md:w-6/12">
           <h2 className="text-2xl font-PlayFair">Escpae to South Africa</h2>
           <p className=" font-Raleway">The ultimate Gateway</p>
         </div>  
-        <div className=" md:w-7/12 h-80 bg-cover bg-no-repeat bg-center bg-LeoImage hover:scale-105 transform duration-700 ease-in-out">
-
+        <div className=" relative w-450 h-400 md:w-2/4  hover:scale-105 transform duration-700 ease-in-out">
+        <Image src={leoImage} layout="fill" objectFit="cover" alt="" />
         </div>
         <div className=" w-full bg-gray-900 items-center pl-10 pb-10  pt-10">
           <h2 className="text-1xl font-Raleway font-bold text-white-white">OUR CURATED PACKAGES</h2>
@@ -198,15 +201,15 @@ export const MultiContainer = () => {
       </div>
     
       <div className="flex flex-col md:flex-row">
-        <div className=" bg-BinaImage h-80 bg-cover bg-center transform hover:scale-105  duration-500 md:w-7/12">
-
+        <div className=" bg-cover bg-center transform hover:scale-105  duration-500 md:w-7/12">
+        <Image src={BinaImage} objectFit="cover" layout="fill" alt=""/>
         </div>
         <div className=" md:w-7/12 h-80 bg-gray-200 items-start justify-items-start justify-center flex flex-col pl-5">
           <h2 className="text-2xl font-PlayFair">Family time in south Africa</h2>
           <p className="font-Raleway">Home is where family goes</p>
         </div>
-        <div className=" md:w-7/12 bg-red-300 h-80 bg-SherImage bg-cover bg-center hover:scale-105 transform duration-1000 ease-in-out"> 
-          
+        <div className=" relative md:w-7/12 bg-red-300 h-80  hover:scale-105 transform duration-1000 ease-in-out"> 
+          <Image src={SherImage} objectFit="cover" layout="fill" alt="" />
         </div>
         <div className=" md:w-5/12 h-80 bg-gray-200 items-start justify-center justify-items-start flex flex-col pl-5">
           <h2 className="text-2xl font-PlayFair">Love South Africa</h2>
